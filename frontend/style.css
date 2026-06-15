@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+}
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: red;
+    color: black;
+
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.hero p {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero button {
+    padding: 10px 20px;
+}
+
+/* Cards */
+
+.cards {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid antiquewhite;
+    border-radius: 10px;
+    text-align: center;
+    background-color: aqua;
+}
+
+/* Other Pages */
+
+.page {
+    padding: 80px 20px;
+    text-align: center;
+    min-height: 70vh;
+}
+
+/* Footer */
+
+footer {
+    background: red;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
