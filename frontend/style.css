@@ -80,14 +80,7 @@ body {
     border-radius: 10px;
     text-align: center;
     background-color: aqua;
-}
-
-/* Other Pages */
-
-.page {
-    padding: 80px 20px;
-    text-align: center;
-    min-height: 70vh;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Footer */
