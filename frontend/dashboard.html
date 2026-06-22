@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: "Times New Roman", Times, serif;
-            background: black;
-            color: white;
-        }
-        h1 {
-            text-align: center;
-            background: black;
-            color: white;
-        }
-        img {
-            display: block;
-            margin: auto auto;
-            align-items: right;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Dashboard</h1>
-    <h3>Welcome to your dashboard!</h3>
-    <p>This is where you can view your analytics and manage your account settings.</p>
-    <img src="/frontend/image.png" alt="Image" height="400px" width="550px">
+   <header>
+        <nav class="navbar">
+            <div class="logo">Ai Assited Guest Review sentiment classifier</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><button id="theme-switcher" class="theme-btn">🌙 Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Dashboard</h1>
+        <h3>Welcome to your dashboard!</h3>
+        <p>This is where you can view your analytics and manage your account settings.</p>
+        <img src="image.png" alt="Image" height="400px" width="550px">
+    </main>
+    <footer>
+        2026 Ai Assited Guest Review sentiment classifier
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact</a>
+    </footer>
 </body>
 </html>
