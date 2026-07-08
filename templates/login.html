@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - AI Guest Sentiment Classifier</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <style>
+      /* Center the login box on the page */
+      .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+        margin-top: 40px;
+      }
+
+      .login-card {
+        width: 100%;
+        max-width: 400px;
+        background-color: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .login-card h2 {
+        text-align: center;
+        margin-bottom: 24px;
+        color: var(--text-main);
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-main);
+      }
+
+      /* Styling for the text input boxes */
+      .form-control {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid var(--border-color);
+        background-color: var(--bg-global);
+        color: var(--text-main);
+        border-radius: 6px;
+        font-size: 14px;
+        outline: none;
+        transition: border-color 0.2s;
+      }
+
+      .form-control:focus {
+        border-color: var(--primary-color);
+      }
+
+      /* Submit Button */
+      .login-btn {
+        width: 100%;
+        padding: 12px;
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        margin-top: 10px;
+      }
+
+      .login-btn:hover {
+        background-color: var(--primary-hover);
+      }
+
+      .form-footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: var(--text-muted);
+      }
+
+      .form-footer a {
+        color: var(--primary-color);
+        text-decoration: none;
+      }
+
+      .form-footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Ai Assited Guest Review sentiment classifier</div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/dashboard">Dashboard</a></li>
+          <li><a href="/login">Login</a></li>
+          <li>
+            <button id="theme-switcher" class="theme-btn">🌙 Dark Mode</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="login-container">
+      <div class="login-card">
+        <h2>Account Login</h2>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="name@company.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              placeholder="••••••••"
+              required
+            />
+          </div>
+
+          <button type="submit" class="login-btn">Sign In</button>
+        </form>
+
+        <div class="form-footer">
+          <p>Don't have an account? <a href="#">Request Access</a></p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      2026 Ai Assited Guest Review sentiment classifier
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact</a>
+    </footer>
+
+    <script src="/static/theme.js?v=1.1"></script>
+    <script>
+      // Simple client-side alert verification to test form submittal
+      document.getElementById("login-form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Authentication simulation executed successfully!");
+      });
+    </script>
+  </body>
+</html>
